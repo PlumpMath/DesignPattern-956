@@ -12,7 +12,7 @@ namespace TerrLuo.DesignPattern.SimpleFactory
         /// </summary>
         public void PackPhone()
         {            
-            IPhone iPhone = new IPhoneFactory().Create(IPhoneModel.IPhone5);
+            IPhone iPhone = IPhoneFactory.Create(IPhoneModel.IPhone5);
 
             var volume = iPhone.Size.Length 
                 * iPhone.Size.Width 

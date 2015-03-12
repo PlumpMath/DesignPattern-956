@@ -7,7 +7,7 @@ namespace TerrLuo.DesignPattern.SimpleFactory
 {
     public class IPhoneFactory
     {
-        public IPhone Create(IPhoneModel model)
+        public static IPhone Create(IPhoneModel model)
         {
             switch(model)
             {
