@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace TerrLuo.DesignPattern.Singleton.Register
+{
+    public class InkjetPrinter : Printer
+    {
+        public InkjetPrinter()
+        {
+            Register(this.GetType().FullName, this);
+        }
+
+        public override void Print(object printItem)
+        {
+            Console.WriteLine("Laser Printer is printing: " + printItem.ToString());
+        }
+    }
+}

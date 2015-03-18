@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace TerrLuo.DesignPattern.Singleton.Register
+{
+    public class LaserPrinter : Printer
+    {
+        public static readonly string InstanceKey = typeof(LaserPrinter).FullName;
+
+        static LaserPrinter()
+        {
+            new LaserPrinter().Register(InstanceKey);
+        }
+
+        /// <summary>
+        /// Still "private"
+        /// </summary>
+        private LaserPrinter()
+        {
+        }
+
+        public override void Print(object printItem)
+        {
+            Console.WriteLine("Laser Printer is printing: " + printItem.ToString());
+        }
+    }
+}

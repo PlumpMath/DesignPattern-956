@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace TerrLuo.DesignPattern.Singleton.Register
+{
+    public class Printer
+    {
+        private static readonly Dictionary<string, Printer> _printers = new Dictionary<string,Printer>();
+
+        protected Printer()
+        {
+
+        }
+
+        protected void Register(string key, Printer printer)
+        {
+            if (!_printers.ContainsKey(key))
+            {
+                _printers.Add(key, printer);
+            }
+            else
+            {
+                _printers[key] = printer;
+            }
+            _printers.Add(key, new LaserPrinter());
+        }
+
+        public static Printer Instance
+        {
+            get
+            {
+                string key = GetEnvKey();
+                return _printers[key];
+            }
+        }
+
+        /// <summary>
+        /// Get key from Environment variables
+        /// </summary>
+        /// <returns></returns>
+        private static string GetEnvKey()
+        {
+            var key = string.Empty;
+            // Code to get key from Environment variables
+            return key;
+        }
+
+        public virtual void Print(object printItem)
+        {
+            Console.WriteLine("Printer is printing: " + printItem.ToString());
+        }
+    }
+}

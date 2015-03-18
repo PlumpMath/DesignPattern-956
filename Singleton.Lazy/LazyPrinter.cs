@@ -13,7 +13,7 @@ namespace TerrLuo.DesignPattern.Singleton.Lazy
             this.PrintItems = new Queue();
         }
 
-        private static LazyPrinter Printer;
+        private static LazyPrinter _printer;
 
         private Queue PrintItems;
 
@@ -21,12 +21,12 @@ namespace TerrLuo.DesignPattern.Singleton.Lazy
         {
             get
             {
-                if ( Printer == null )
+                if ( _printer == null )
                 {
-                    Printer = new LazyPrinter();
+                    _printer = new LazyPrinter();
                 }
 
-                return Printer;
+                return _printer;
             }
         }
 
