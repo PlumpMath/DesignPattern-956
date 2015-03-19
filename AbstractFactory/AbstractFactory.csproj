@@ -61,6 +61,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Product\Size.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram\Product.Phone.More.cd" />
+    <None Include="ClassDiagram\Product.Pad.cd" />
+    <None Include="ClassDiagram\Product.Phone.cd" />
+    <None Include="ClassDiagram\AbstractFactory.More.cd" />
+    <None Include="ClassDiagram\AbstractFactory.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
