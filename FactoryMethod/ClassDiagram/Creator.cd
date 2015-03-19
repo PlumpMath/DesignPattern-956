@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.Outlook">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAADAAgAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Outlook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.Component">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAADAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creator\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.CalendarComponent">
+    <Position X="7.25" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creator\CalendarComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.ContactComponent">
+    <Position X="2.75" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creator\ContactComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.MailComponent">
+    <Position X="5" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creator\MailComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>
