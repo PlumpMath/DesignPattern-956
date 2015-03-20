@@ -7,8 +7,8 @@
     <ProjectGuid>{904A07C5-11A2-4E9C-BDA0-157FB4A8E3F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FactoryMethod.GOF</RootNamespace>
-    <AssemblyName>FactoryMethod.GOF</AssemblyName>
+    <RootNamespace>TerrLuo.DesignPattern.FactoryMethod</RootNamespace>
+    <AssemblyName>TerrLuo.DesignPattern.FactoryMethod</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -43,10 +43,10 @@
     <Compile Include="Creator\CalendarComponent.cs" />
     <Compile Include="Creator\ContactComponent.cs" />
     <Compile Include="Creator\MailComponent.cs" />
-    <Compile Include="Product\CalendarMainArea.cs" />
-    <Compile Include="Product\ContactMainArea.cs" />
-    <Compile Include="Product\MailMainArea.cs" />
-    <Compile Include="Product\MainArea.cs" />
+    <Compile Include="Product\CalendarWorkArea.cs" />
+    <Compile Include="Product\ContactWorkArea.cs" />
+    <Compile Include="Product\MailWorkArea.cs" />
+    <Compile Include="Product\WorkArea.cs" />
     <Compile Include="Outlook.cs" />
     <Compile Include="Creator\Component.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

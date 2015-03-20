@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace TerrLuo.DesignPattern.FactoryMethod.GOF
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
-    public abstract class MainArea
+    public abstract class WorkArea
     {
         public abstract void Show();
 

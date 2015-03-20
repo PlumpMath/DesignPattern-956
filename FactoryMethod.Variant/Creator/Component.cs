@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
     public abstract class Component
     {

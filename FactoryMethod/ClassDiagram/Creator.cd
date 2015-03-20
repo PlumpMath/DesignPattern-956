@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.Outlook">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.Outlook">
     <Position X="0.5" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAADAAgAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Outlook.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.Component">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.Component">
     <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAADAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAABAAAABAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\Component.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.CalendarComponent">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.CalendarComponent">
     <Position X="7.25" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAABAAAABAAAAAAAQAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\CalendarComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.ContactComponent">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.ContactComponent">
     <Position X="2.75" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAABAAAABAAAAAAAQAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\ContactComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TerrLuo.DesignPattern.FactoryMethod.GOF.MailComponent">
+  <Class Name="TerrLuo.DesignPattern.FactoryMethod.MailComponent">
     <Position X="5" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAADAAAABAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAABAAAABAAAAAAAQAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\MailComponent.cs</FileName>
     </TypeIdentifier>
   </Class>

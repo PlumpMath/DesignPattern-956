@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,17 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPhonePacker.cs" />
-    <Compile Include="Factory\IPhone6Factory.cs" />
-    <Compile Include="Factory\IPhone5Factory.cs" />
-    <Compile Include="Factory\IPhone4Factory.cs" />
-    <Compile Include="Factory\IPhoneFactory.cs" />
-    <Compile Include="IPhone\IPhone.cs" />
-    <Compile Include="IPhone\IPhone4.cs" />
-    <Compile Include="IPhone\IPhone5.cs" />
-    <Compile Include="IPhone\IPhone6.cs" />
-    <Compile Include="IPhone\Size.cs" />
+    <Compile Include="Creator\CalendarComponent.cs" />
+    <Compile Include="Creator\Component.cs" />
+    <Compile Include="Creator\ContactComponent.cs" />
+    <Compile Include="Creator\MailComponent.cs" />
+    <Compile Include="Factory\CalendarWorkAreaFactory.cs" />
+    <Compile Include="Factory\ContactWorkAreaFactory.cs" />
+    <Compile Include="Factory\MailWorkAreaFactory.cs" />
+    <Compile Include="Factory\WorkAreaFactory.cs" />
+    <Compile Include="Outlook.cs" />
+    <Compile Include="Product\CalendarWorkArea.cs" />
+    <Compile Include="Product\ContactWorkArea.cs" />
+    <Compile Include="Product\MailWorkArea.cs" />
+    <Compile Include="Product\WorkArea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram\Creator-Factory-Product.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

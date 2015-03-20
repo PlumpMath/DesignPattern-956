@@ -2,20 +2,20 @@
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod.GOF
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
-    public class MailMainArea : MainArea
+    public class MailWorkArea : WorkArea
     {
-        private readonly DataGridView _mainControl = new DataGridView();
+        private readonly DataGridView _areaControl = new DataGridView();
  
         public override void Show()
         {
-            this._mainControl.Show();
+            this._areaControl.Show();
         }
 
         public override void Hide()
         {
-            this._mainControl.Hide();
+            this._areaControl.Hide();
         }
 
         private void CreateNewMail()

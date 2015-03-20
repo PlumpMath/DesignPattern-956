@@ -2,9 +2,9 @@
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod.GOF
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
-    public class CalendarMainArea : MainArea
+    public class CalendarWorkArea : WorkArea
     {
         private readonly System.Windows.Forms.ListView _container = new ListView();
  

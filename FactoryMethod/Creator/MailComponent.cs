@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod.GOF
+namespace TerrLuo.DesignPattern.FactoryMethod
 {
     public class MailComponent : Component
     {
@@ -17,9 +17,9 @@ namespace TerrLuo.DesignPattern.FactoryMethod.GOF
             new MenuItem("Forward") 
         };
 
-        public override MainArea CreateMainArea()
+        public override WorkArea CreateWorkArea()
         {
-            return new MailMainArea();
+            return new MailWorkArea();
         }
 
         public override ListViewItem NavigatorItem 

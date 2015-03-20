@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
     public class CalendarComponent : Component
     {
@@ -22,7 +22,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
 
         public override WorkArea CreateWorkArea()
         {
-            return new MailWorkArea();
+            return new CalendarWorkAreaFactory().Create();
         }
 
         public override ListViewItem NavigatorItem 

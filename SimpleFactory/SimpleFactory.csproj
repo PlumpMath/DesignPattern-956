@@ -39,13 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPhonePacker.cs" />
+    <Compile Include="WebPage.cs" />
     <Compile Include="IPhoneFactory.cs" />
     <Compile Include="IPhone\IPhone.cs" />
     <Compile Include="IPhone\IPhone4.cs" />
     <Compile Include="IPhone\IPhone5.cs" />
     <Compile Include="IPhone\IPhone6.cs" />
-    <Compile Include="IPhone\IPhoneModel.cs" />
     <Compile Include="IPhone\Size.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -3,26 +3,23 @@ using System.Collections.Generic;
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod
+namespace TerrLuo.DesignPattern.FactoryMethod.Variant
 {
-    public class CalendarComponent : Component
+    public class MailComponent : Component
     {
-        private static ListViewItem _navigatorItem = new ListViewItem("Calendar", "Calendar.png");
+        private static ListViewItem _navigatorItem = new ListViewItem("Mail", "Mail.png");
 
         private static List<MenuItem> _menuItems = new List<MenuItem> 
         { 
-            new MenuItem("New Appointment"), 
-            new MenuItem("New Meeting"), 
-            new MenuItem("Today"), 
-            new MenuItem("Next 7 Days"),            
-            new MenuItem("Day"),            
-            new MenuItem("Work Week"),            
-            new MenuItem("Week") 
+            new MenuItem("New Email"), 
+            new MenuItem("Delete"), 
+            new MenuItem("Reply"), 
+            new MenuItem("Forward") 
         };
 
         public override WorkArea CreateWorkArea()
         {
-            return new MailWorkArea();
+            return new MailWorkAreaFactory().Create();
         }
 
         public override ListViewItem NavigatorItem 

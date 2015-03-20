@@ -2,20 +2,20 @@
 
 using System.Windows.Forms;
 
-namespace TerrLuo.DesignPattern.FactoryMethod.GOF
+namespace TerrLuo.DesignPattern.FactoryMethod
 {
-    public class ContactMainArea : MainArea
+    public class ContactWorkArea : WorkArea
     {
-        private readonly SplitContainer _mainControl = new SplitContainer();
+        private readonly SplitContainer _areaControl = new SplitContainer();
  
         public override void Show()
         {
-            this._mainControl.Show();
+            this._areaControl.Show();
         }
 
         public override void Hide()
         {
-            this._mainControl.Hide();
+            this._areaControl.Hide();
         }
 
         private void CreateContact()
