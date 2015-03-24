@@ -12,7 +12,10 @@ namespace TerrLuo.DesignPattern.FactoryMethod
         /// </summary>
         public void LoadComponents()
         {
-            List<Component> components = GetComponents();
+            // Find all outlook components
+            List<Component> components = FindComponents();
+
+            // Load main members of each component into outlook
             foreach (var component in components)
             {
                 // Fill Menu & Navigator 
@@ -26,7 +29,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
         }
 
         /// <summary>
-        /// Get all outlook components
+        /// Find all outlook components
         /// (
         ///     here could be very flexible: 
         ///     you could check the component plugin folder 
@@ -34,7 +37,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
         /// )
         /// </summary>
         /// <returns></returns>
-        private List<Component> GetComponents()
+        private List<Component> FindComponents()
         {
             return new List<Component>
             {

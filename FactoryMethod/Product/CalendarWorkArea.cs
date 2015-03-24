@@ -6,16 +6,16 @@ namespace TerrLuo.DesignPattern.FactoryMethod
 {
     public class CalendarWorkArea : WorkArea
     {
-        private readonly System.Windows.Forms.ListView _container = new ListView();
+        private readonly ListView _areaControl = new ListView();
  
         public override void Show()
         {
-            this._container.Show();
+            this._areaControl.Show();
         }
 
         public override void Hide()
         {
-            this._container.Hide();
+            this._areaControl.Hide();
         }
 
         private void CreateMeeting()
