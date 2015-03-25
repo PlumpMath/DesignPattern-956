@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.Outlook">
-    <Position X="3.5" Y="0.75" Width="2.25" />
+    <Position X="0.75" Y="1.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAgAAEACAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Outlook.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.Component">
-    <Position X="3.5" Y="3.75" Width="2.75" />
+    <Position X="4.25" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAABAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\Component.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.WorkArea">
-    <Position X="8" Y="3.75" Width="2.75" />
+    <Position X="4.25" Y="3" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product\WorkArea.cs</FileName>

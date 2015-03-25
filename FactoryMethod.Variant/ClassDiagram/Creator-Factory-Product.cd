@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.Variant.MailWorkArea">
-    <Position X="7.5" Y="0.5" Width="1.75" />
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAACAAAEAAAAAAAQAAEACAAAAAAAAAAAAA=</HashCode>
       <FileName>Product\MailWorkArea.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.Variant.MailWorkAreaFactory">
-    <Position X="4.5" Y="0.5" Width="2.25" />
+    <Position X="3.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory\MailWorkAreaFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.Variant.MailComponent">
-    <Position X="1.5" Y="0.5" Width="2.25" />
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAABAAAABAAAAAAAQAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Creator\MailComponent.cs</FileName>

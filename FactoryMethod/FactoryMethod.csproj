@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="ClassDiagram\Creator-Product.cd" />
+    <None Include="ClassDiagram\All.cd" />
+    <None Include="ClassDiagram\Dependency.cd" />
     <None Include="ClassDiagram\Product.cd" />
     <None Include="ClassDiagram\Creator.cd" />
   </ItemGroup>
