@@ -6,6 +6,12 @@ namespace TerrLuo.DesignPattern.AbstractFactory
     {
         public void ShowProduct()
         {
+            string selectedManufacturer = GetSelectedManufacturer();
+            AbstractFactory factory = GetFactory(selectedManufacturer);
+            Pad pad = factory.CreatePad();
+            Phone phone = factory.CreatePhone();
+
+            // Code to bind Pad & Phone's properties to UI controls.
         }
 
         private AbstractFactory GetFactory(string selectedManufacturer)

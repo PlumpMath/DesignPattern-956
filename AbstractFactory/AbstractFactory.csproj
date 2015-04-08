@@ -42,6 +42,7 @@
     <Compile Include="AbstractFactory.cs" />
     <Compile Include="AppleFamilyFactoryV2.cs" />
     <Compile Include="AppleFamilyFactoryV1.cs" />
+    <Compile Include="WebPage.cs" />
     <Compile Include="MicrosoftFamilyFactoryV2.cs" />
     <Compile Include="MicrosoftFamilyFactoryV1.cs" />
     <Compile Include="Product\Pad\IPad\IPad2.cs" />

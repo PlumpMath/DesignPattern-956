@@ -2,7 +2,7 @@
 
 namespace TerrLuo.DesignPattern.AbstractFactory
 {
-    public abstract class AppleFamilyFactoryV2 : AbstractFactory
+    public class AppleFamilyFactoryV2 : AbstractFactory
     {
         public override Pad CreatePad()
         {
