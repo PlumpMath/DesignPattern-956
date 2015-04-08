@@ -6,7 +6,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
 {
     public class MailWorkArea : WorkArea
     {
-        private readonly DataGridView _areaControl = new DataGridView();
+        private readonly SplitContainer _areaControl = new SplitContainer();
  
         public override void Show()
         {

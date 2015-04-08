@@ -6,7 +6,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
 {
     public class ContactWorkArea : WorkArea
     {
-        private readonly SplitContainer _areaControl = new SplitContainer();
+        private readonly ListView _areaControl = new ListView();
  
         public override void Show()
         {

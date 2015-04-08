@@ -6,7 +6,7 @@ namespace TerrLuo.DesignPattern.FactoryMethod
 {
     public class CalendarWorkArea : WorkArea
     {
-        private readonly ListView _areaControl = new ListView();
+        private readonly DataGridView _areaControl = new DataGridView();
  
         public override void Show()
         {
