@@ -63,6 +63,7 @@
     <Compile Include="Product\Size.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram\Client-Factory-Product.cd" />
     <None Include="ClassDiagram\Product.Phone.More.cd" />
     <None Include="ClassDiagram\Product.Pad.cd" />
     <None Include="ClassDiagram\Product.Phone.cd" />

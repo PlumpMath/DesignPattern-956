@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrLuo.DesignPattern.AbstractFactory.WebPage">
+    <Position X="0.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>WebPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.AbstractFactory.AbstractFactory">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>AbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.AbstractFactory.Pad">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAgAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product\Pad\Pad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.AbstractFactory.Phone">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAgAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product\Phone\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>
