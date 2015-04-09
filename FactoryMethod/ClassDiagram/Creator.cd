@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.CalendarComponent">
-    <Position X="7.25" Y="3" Width="2" />
+    <Position X="5" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -18,7 +18,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.ContactComponent">
-    <Position X="2.75" Y="3" Width="2" />
+    <Position X="7.25" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -28,7 +28,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.MailComponent">
-    <Position X="5" Y="3" Width="2" />
+    <Position X="2.75" Y="3" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>

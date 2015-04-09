@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.CalendarComponent">
-    <Position X="1.75" Y="2.75" Width="1.75" />
+    <Position X="4" Y="2.75" Width="1.75" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
@@ -28,7 +28,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.MailComponent">
-    <Position X="4" Y="2.75" Width="1.75" />
+    <Position X="1.75" Y="2.75" Width="1.75" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.ContactWorkArea">
-    <Position X="0.5" Y="2.5" Width="2" />
+    <Position X="5" Y="2.5" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAIEAAAAAAAAAAEAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAIAAAIEAAAAAAAQAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product\ContactWorkArea.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -16,17 +16,17 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAQAAAAEAAAACAAAIAEAAAAAAAAQAAIAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAQAAAAEAAAAAAAQIAEAAAAAAAAQAAIAAA=</HashCode>
       <FileName>Product\CalendarWorkArea.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TerrLuo.DesignPattern.FactoryMethod.MailWorkArea">
-    <Position X="5" Y="2.5" Width="2" />
+    <Position X="0.5" Y="2.5" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AABAAAAAAAAACAAAEAAAAAAAAAAEACAAAAACAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAACAAAEAAAAAAAQAAEACAAAAAAAAAAAAA=</HashCode>
       <FileName>Product\MailWorkArea.cs</FileName>
     </TypeIdentifier>
   </Class>
