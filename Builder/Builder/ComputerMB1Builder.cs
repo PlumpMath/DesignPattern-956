@@ -2,53 +2,53 @@
 
 namespace TerrLuo.DesignPattern.Builder
 {
-    public class ComputerM001Builder : ComputerBuilder
+    public class ComputerMB1Builder : ComputerBuilder
     {
-        private ComputerM001 _computer = new ComputerM001();
+        private ComputerMB1 _computer = new ComputerMB1();
 
         public override void BuildMainboard()
         {
-            // Code specific for Computer001 Mainboard
+            // Code specific for ComputerMB1 Mainboard
         }
 
         public override void BuildCPU()
         {
-            // Code specific for Computer001 CPU
+            // Code specific for ComputerMB1 CPU
         }
 
         public override void BuildGraphicCard()
         {
-            // Code specific for Computer001 GraphicCard
+            // Code specific for ComputerMB1 GraphicCard
         }
 
         public override void BuildMemory()
         {
-            // Code specific for Computer001 Memory
+            // Code specific for ComputerMB1 Memory
         }
 
         public override void BuildHardDisk()
         {
-            // Code specific for Computer001 HardDisk
+            // Code specific for ComputerMB1 HardDisk
         }
 
         public override void BuildPower()
         {
-            // Code specific for Computer001 Power
+            // Code specific for ComputerMB1 Power
         }
 
         public override void BuildMonitor()
         {
-            // Code specific for Computer001 Monitor
+            // Code specific for ComputerMB1 Monitor
         }
 
         public override void BuildKeyboard()
         {
-            // Code specific for Computer001 Keyboard
+            // Code specific for ComputerMB1 Keyboard
         }
 
         public override void BuildMouse()
         {
-            // Code specific for Computer001 Mouse
+            // Code specific for ComputerMB1 Mouse
         }
 
         /// <summary>

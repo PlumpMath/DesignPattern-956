@@ -8,30 +8,30 @@ namespace TerrLuo.DesignPattern.Builder
 {
     public class ComputerBuilderFactory
     {
-        public ComputerBuilder Create(string selectedComputerModel)
+        public static ComputerBuilder Create(string selectedComputerName)
         {
             ComputerBuilder computerBuilder;
 
-            switch (selectedComputerModel)
+            switch (selectedComputerName)
             {
-                case "M001":
-                    computerBuilder = new ComputerM001Builder();
+                case "ComputerMA1":
+                    computerBuilder = new ComputerMA1Builder();
                     break;
 
-                case "M002":
-                    computerBuilder = new ComputerM002Builder();
+                case "ComputerMB1":
+                    computerBuilder = new ComputerMB1Builder();
                     break;
 
-                case "M003":
-                    computerBuilder = new ComputerM003Builder();
+                case "ComputerMC1":
+                    computerBuilder = new ComputerMC1Builder();
                     break;
 
-                case "M004":
-                    computerBuilder = new ComputerM004Builder();
+                case "ComputerMD1":
+                    computerBuilder = new ComputerMD1Builder();
                     break;
 
                 default:
-                    computerBuilder = new ComputerM001Builder();
+                    computerBuilder = new ComputerMA1Builder();
                     break;
             }
 

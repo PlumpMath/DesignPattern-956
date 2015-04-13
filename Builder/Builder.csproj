@@ -39,20 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder\ComputerM003Builder.cs" />
-    <Compile Include="Builder\ComputerM004Buildery.cs" />
-    <Compile Include="Builder\ComputerM002Builder.cs" />
-    <Compile Include="Builder\ComputerM001Builder.cs" />
+    <Compile Include="Builder\ComputerMC1Builder.cs" />
+    <Compile Include="Builder\ComputerMD1Buildery.cs" />
+    <Compile Include="Builder\ComputerMB1Builder.cs" />
+    <Compile Include="Builder\ComputerMA1Builder.cs" />
     <Compile Include="Builder\ComputerBuilder.cs" />
-    <Compile Include="Client.cs" />
+    <Compile Include="WebPage.cs" />
     <Compile Include="ComputerBuilderFactory.cs" />
     <Compile Include="ComputerDirector.cs" />
     <Compile Include="Computer\Computer.cs" />
-    <Compile Include="Computer\ComputerM004.cs" />
-    <Compile Include="Computer\ComputerM003.cs" />
-    <Compile Include="Computer\ComputerM002.cs" />
-    <Compile Include="Computer\ComputerM001.cs" />
-    <Compile Include="Computer\PerformanceType.cs" />
+    <Compile Include="Computer\ComputerMD1.cs" />
+    <Compile Include="Computer\ComputerMC1.cs" />
+    <Compile Include="Computer\ComputerMB1.cs" />
+    <Compile Include="Computer\ComputerMA1.cs" />
+    <Compile Include="Computer\PerformanceLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
