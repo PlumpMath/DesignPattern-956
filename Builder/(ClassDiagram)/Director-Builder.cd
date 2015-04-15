@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerDirector">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Director\ComputerDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerBuilder">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAAAQABAQAAAAAQAAACgAAAAAAAAAA=</HashCode>
+      <FileName>Builder\ComputerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerDirector">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Director\ComputerDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.WebPage_ComputerGameLevel001">
+    <Position X="0.5" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebPage_ComputerGameLevel001.cs</FileName>
+      <NewMemberFileName>WebPage_ComputerDomesticLevel001.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerBuilder">
+    <Position X="5.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAAAQABAQAAAAAQAAACgAAAAAAAAAA=</HashCode>
+      <FileName>Builder\ComputerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerGameLevel001Builder">
+    <Position X="5.75" Y="3.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAACQABAQQAAAAQAAACgAAAAAAAAAA=</HashCode>
+      <FileName>Builder\ComputerGameLevel001Builder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

@@ -4,8 +4,6 @@ namespace TerrLuo.DesignPattern.Proxy
 {
     public class CommonBankAccountProxy : BankAccount
     {
-        private const decimal UpperLimit = 500m;
-
         private readonly CommonBankAccount _commonBankAccount;
 
         public CommonBankAccountProxy(CommonBankAccount commonBankAccount)

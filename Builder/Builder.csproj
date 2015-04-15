@@ -39,22 +39,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder\ComputerMC1Builder.cs" />
-    <Compile Include="Builder\ComputerMD1Buildery.cs" />
-    <Compile Include="Builder\ComputerMB1Builder.cs" />
-    <Compile Include="Builder\ComputerMA1Builder.cs" />
+    <Compile Include="Builder\ComputerGameLevel001Builder.cs" />
+    <Compile Include="Builder\ComputerDomesticLevel001Builder.cs" />
     <Compile Include="Builder\ComputerBuilder.cs" />
-    <Compile Include="WebPage.cs" />
-    <Compile Include="ComputerBuilderFactory.cs" />
-    <Compile Include="ComputerDirector.cs" />
-    <Compile Include="Computer\Computer.cs" />
-    <Compile Include="Computer\ComputerMD1.cs" />
-    <Compile Include="Computer\ComputerMC1.cs" />
-    <Compile Include="Computer\ComputerMB1.cs" />
-    <Compile Include="Computer\ComputerMA1.cs" />
-    <Compile Include="Computer\PerformanceLevel.cs" />
+    <Compile Include="Product\Part\CPU_AMD_FX_8350.cs" />
+    <Compile Include="Product\Part\CPU_Intel_I3_4160.cs" />
+    <Compile Include="WebPage_ComputerGameLevel001.cs" />
+    <Compile Include="WebPage_ComputerDomesticLevel001.cs" />
+    <Compile Include="Director\ComputerDirector.cs" />
+    <Compile Include="Product\ComputerGameLevel001.cs" />
+    <Compile Include="Product\ComputerDomesticLevel001.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="%28ClassDiagram%29\Client-Director-Builder.cd" />
+    <None Include="%28ClassDiagram%29\Builder.cd" />
+    <None Include="%28ClassDiagram%29\Product.cd" />
+    <None Include="%28ClassDiagram%29\Director-Builder.cd" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

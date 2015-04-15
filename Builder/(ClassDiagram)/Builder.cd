@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerDomesticLevel001Builder">
+    <Position X="1.5" Y="4" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAAAQABAQQAAAAQAAACgAAAEAAAAAA=</HashCode>
+      <FileName>Builder\ComputerDomesticLevel001Builder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerBuilder">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAAAQABAQAAAAAQAAACgAAAAAAAAAA=</HashCode>
+      <FileName>Builder\ComputerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrLuo.DesignPattern.Builder.ComputerGameLevel001Builder">
+    <Position X="7" Y="4" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAAAAEAAAAACAAAAAQABAQQAAAAQAAACgAAAEAAAAAA=</HashCode>
+      <FileName>Builder\ComputerGameLevel001Builder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>
