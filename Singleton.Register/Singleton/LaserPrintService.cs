@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Register
 {
-    public class InkjetPrinter : Printer
+    public class LaserPrintService : PrintService
     {
         /// <summary>
         /// Notice: here is public
         /// </summary>
-        public InkjetPrinter()
+        public LaserPrintService()
         {
         }
 

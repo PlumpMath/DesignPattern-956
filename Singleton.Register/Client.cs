@@ -6,7 +6,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register
     {
         public void Print(string printItem)
         {
-            Printer.GetInstance(typeof(LaserPrinter).FullName).Print(printItem);
+            PrintService.GetInstance(typeof(LaserPrintService).FullName).Print(printItem);
         }
     }
 }

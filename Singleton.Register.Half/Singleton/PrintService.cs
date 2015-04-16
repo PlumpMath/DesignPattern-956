@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Terry
+namespace TerrLuo.DesignPattern.Singleton.Register.Half
 {
-    public class Printer
+    public class PrintService
     {
-        private static readonly Dictionary<string, Printer> _printers = new Dictionary<string,Printer>();
+        private static readonly Dictionary<string, PrintService> _printers = new Dictionary<string,PrintService>();
 
         /// <summary>
         /// Here should be "protected", because when instantiating its children class, it will call base class' constructor
         /// </summary>
-        protected Printer()
+        protected PrintService()
         {
         }
 
@@ -26,7 +26,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
             }
         }
         
-        public static Printer GetInstance(string classFullName)
+        public static PrintService GetInstance(string classFullName)
         {
             return _printers[classFullName];
         }

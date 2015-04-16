@@ -39,8 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LazyPrinterV2.cs" />
-    <Compile Include="LazyPrinterV1.cs" />
+    <Compile Include="LazyPrintServiceV2.cs" />
+    <Compile Include="LazyPrintServiceV1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,18 +4,18 @@ using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Register.Half
 {
-    public class LaserPrinter : Printer
+    public class InkjetPrintService : PrintService
     {
-        static LaserPrinter()
+        static InkjetPrintService()
         {
-            var instanceKey = typeof(LaserPrinter).FullName;
-            new LaserPrinter().Register(instanceKey);
+            var instanceKey = typeof(LaserPrintService).FullName;
+            new InkjetPrintService().Register(instanceKey);
         }
 
         /// <summary>
         /// Still "private"
         /// </summary>
-        private LaserPrinter()
+        private InkjetPrintService()
         {
         }
 

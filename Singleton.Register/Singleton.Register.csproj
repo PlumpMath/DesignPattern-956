@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="Singleton\InkjetPrinter.cs" />
-    <Compile Include="Singleton\LaserPrinter.cs" />
-    <Compile Include="Singleton\Printer.cs" />
+    <Compile Include="Singleton\InkjetPrintService.cs" />
+    <Compile Include="Singleton\LaserPrintService.cs" />
+    <Compile Include="Singleton\PrintService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

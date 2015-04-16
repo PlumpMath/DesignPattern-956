@@ -4,29 +4,33 @@ using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace TerrLuo.DesignPattern.Singleton.Lazy
+namespace TerrLuo.DesignPattern.Singleton.Lazy.Improved
 {
-    public class LazyPrinter
+    public class LazyPrintServiceV1
     {
-        private LazyPrinter()
+        private LazyPrintServiceV1()
         {
             this.PrintItems = new Queue();
         }
 
-        private static LazyPrinter _printer;
+        private static LazyPrintServiceV1 Printer;
+        private static object SyncRoot = new object();
 
         private Queue PrintItems;
 
-        public static LazyPrinter Instance
+        public static LazyPrintServiceV1 Instance
         {
             get
             {
-                if ( _printer == null )
+                lock (SyncRoot)
                 {
-                    _printer = new LazyPrinter();
+                    if (Printer == null)
+                    {
+                        Printer = new LazyPrintServiceV1();
+                    }
                 }
 
-                return _printer;
+                return Printer;
             }
         }
 

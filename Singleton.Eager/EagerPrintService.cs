@@ -3,17 +3,17 @@ using System.Collections;
 
 namespace TerrLuo.DesignPattern.Singleton.Eager
 {
-    public class EagerPrinter
+    public class EagerPrintService
     {
-        private EagerPrinter()
+        private EagerPrintService()
         {
         }
 
-        private static readonly EagerPrinter _printer = new EagerPrinter();
+        private static readonly EagerPrintService _printer = new EagerPrintService();
 
         private Queue PrintItems = new Queue();
 
-        public static EagerPrinter Instance
+        public static EagerPrintService Instance
         {
             get
             {

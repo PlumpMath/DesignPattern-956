@@ -6,7 +6,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Half
     {
         public void Print(string printItem)
         {
-            Printer.GetInstance("TerrLuo.DesignPattern.Singleton.Register.Half.LaserPrinter").Print(printItem);
+            PrintService.GetInstance("TerrLuo.DesignPattern.Singleton.Register.Half.LaserPrinter").Print(printItem);
         }
     }
 }

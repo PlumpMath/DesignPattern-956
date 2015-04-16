@@ -6,27 +6,31 @@ using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Lazy.Improved
 {
-    public class LazyPrinterV1
+    public class LazyPrintServiceV2
     {
-        private LazyPrinterV1()
+        private LazyPrintServiceV2()
         {
             this.PrintItems = new Queue();
         }
 
-        private static LazyPrinterV1 Printer;
+        private static LazyPrintServiceV2 Printer;
         private static object SyncRoot = new object();
 
         private Queue PrintItems;
 
-        public static LazyPrinterV1 Instance
+        public static LazyPrintServiceV2 Instance
         {
             get
             {
-                lock (SyncRoot)
+                // Double-check locking
+                if (Printer == null)
                 {
-                    if (Printer == null)
+                    lock (SyncRoot)
                     {
-                        Printer = new LazyPrinterV1();
+                        if (Printer == null)
+                        {
+                            Printer = new LazyPrintServiceV2();
+                        }
                     }
                 }
 
