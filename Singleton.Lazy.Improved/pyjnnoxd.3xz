@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Linq;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Lazy.Improved
 {
-    public sealed class LazyPrintServiceV1
+    public sealed class LazyPrintServiceV2
     {
         // Item Queue for printing (Synchronized for thread safe)
         private readonly Queue _printItemQueue = Queue.Synchronized(new Queue());
@@ -14,31 +16,35 @@ namespace TerrLuo.DesignPattern.Singleton.Lazy.Improved
 
         #region Singleton
 
-        private static LazyPrintServiceV1 _printService;          // Different from Eager Mode
-        private static object SyncRoot = new object();
-
-        private LazyPrintServiceV1()
+        private LazyPrintServiceV2()
         {
-            // Code to initialize _printItemQueue and _printers can also be move here
+            // Code to initialize _printItemQueue and _printers can also be put here
 
             // Code to start the print loop job, something like: while (true) { DispatchPrint(); Sleep(5000); }
 
             // Some more code to do initialization
         }
 
-        public static LazyPrintServiceV1 Instance
+        private static LazyPrintServiceV2 Printer;
+        private static object SyncRoot = new object();
+
+        public static LazyPrintServiceV2 Instance
         {
             get
             {
-                lock (SyncRoot)
+                // Double-check locking
+                if (Printer == null)
                 {
-                    if (_printService == null)
+                    lock (SyncRoot)
                     {
-                        _printService = new LazyPrintServiceV1();   // Different from Eager Mode
+                        if (Printer == null)
+                        {
+                            Printer = new LazyPrintServiceV2();
+                        }
                     }
                 }
 
-                return _printService;
+                return Printer;
             }
         }
 

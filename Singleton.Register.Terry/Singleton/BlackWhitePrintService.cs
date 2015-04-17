@@ -1,33 +1,31 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Register.Terry
 {
-    public class LaserPrintService : PrintService
+    public class BlackWhitePrintService : PrintService
     {
         /// <summary>
-        /// Client must use this member as key passed to Printer,
+        /// Client must use this member as key passed to PrintService,
         /// so that the static Constructor will be triggered due to member accessing for the first time
         /// and then this instance can be registered into dictionary.
         /// </summary>
-        public static readonly string InstanceKey = typeof(LaserPrintService).FullName;
+        public static readonly string InstanceKey = typeof(ColourPrintService).FullName;
 
-        static LaserPrintService()
+        static BlackWhitePrintService()
         {
-            new LaserPrintService().Register(InstanceKey);
+            new BlackWhitePrintService().Register(InstanceKey);
         }
 
         /// <summary>
         /// Still "private"
         /// </summary>
-        private LaserPrintService()
+        private BlackWhitePrintService()
         {
         }
 
         public override void Print(object printItem)
         {
-            Console.WriteLine("Laser Printer is printing: " + printItem.ToString());
+            Console.WriteLine("Black & white print service has received: " + printItem.ToString());
         }
     }
 }

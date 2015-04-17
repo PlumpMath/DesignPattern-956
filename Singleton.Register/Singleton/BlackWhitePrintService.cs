@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Register
 {
-    public class LaserPrintService : PrintService
+    public class BlackWhitePrintService : PrintService
     {
         /// <summary>
         /// Notice: here is public
         /// </summary>
-        public LaserPrintService()
+        public BlackWhitePrintService()
         {
         }
 
         public override void Print(object printItem)
         {
-            Console.WriteLine("Laser Printer is printing: " + printItem.ToString());
+            Console.WriteLine("Black & white print service has received: " + printItem.ToString());
         }
     }
 }

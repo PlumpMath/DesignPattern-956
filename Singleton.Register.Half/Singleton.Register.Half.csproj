@@ -40,8 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
-    <Compile Include="Singleton\InkjetPrintService.cs" />
-    <Compile Include="Singleton\LaserPrintService.cs" />
+    <Compile Include="Singleton\BlackWhitePrintService.cs" />
+    <Compile Include="Singleton\ColourPrintService.cs" />
     <Compile Include="Singleton\PrintService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

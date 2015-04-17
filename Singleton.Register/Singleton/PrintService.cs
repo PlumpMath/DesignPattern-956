@@ -5,7 +5,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register
 {
     public class PrintService
     {
-        private static readonly Dictionary<string, PrintService> _printers = new Dictionary<string,PrintService>();
+        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string,PrintService>();
 
         /// <summary>
         /// Notice: Printer as a base class has to know all its children classes: InkjetPrinter, LaserPrinter
@@ -13,8 +13,8 @@ namespace TerrLuo.DesignPattern.Singleton.Register
         /// </summary>
         static PrintService()
         {
-            Register(new InkjetPrintService());
-            Register(new LaserPrintService());
+            Register(new BlackWhitePrintService());
+            Register(new ColourPrintService());
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register
         
         public static PrintService GetInstance(string key)
         {
-            return _printers[key];
+            return _printServices[key];
         }
 
         /*
@@ -34,12 +34,12 @@ namespace TerrLuo.DesignPattern.Singleton.Register
         /// <summary>
         /// Get instance according to the key stored in Environment variables
         /// </summary>
-        public static Printer Instance
+        public static PrintService Instance
         {
             get
             {
                 string key = GetEnvKey();
-                return _printers[key];
+                return _printServices[key];
             }
         }       
         
@@ -58,19 +58,19 @@ namespace TerrLuo.DesignPattern.Singleton.Register
 
         public virtual void Print(object printItem)
         {
-            Console.WriteLine("Printer is printing: " + printItem.ToString());
+            Console.WriteLine("Print service has received: " + printItem.ToString());
         }
 
         private static void Register(PrintService printer)
         {
             var key = printer.GetType().FullName;
-            if (!_printers.ContainsKey(key))
+            if (!_printServices.ContainsKey(key))
             {
-                _printers.Add(key, printer);
+                _printServices.Add(key, printer);
             }
             else
             {
-                _printers[key] = printer;
+                _printServices[key] = printer;
             }
         }
     }

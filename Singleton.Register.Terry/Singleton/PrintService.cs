@@ -5,10 +5,10 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
 {
     public class PrintService
     {
-        private static readonly Dictionary<string, PrintService> _printers = new Dictionary<string,PrintService>();
+        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string, PrintService>();
 
         /// <summary>
-        /// Here should be "protected", because when instantiating its children class, it will call base class' constructor
+        /// Notice: Here is "protected", because when instantiating its children class, it will call base class' constructor
         /// </summary>
         protected PrintService()
         {
@@ -16,19 +16,19 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
 
         protected void Register(string key)
         {
-            if (!_printers.ContainsKey(key))
+            if (!_printServices.ContainsKey(key))
             {
-                _printers.Add(key, this);
+                _printServices.Add(key, this);
             }
             else
             {
-                _printers[key] = this;
+                _printServices[key] = this;
             }
         }
         
         public static PrintService GetInstance(string classFullName)
         {
-            return _printers[classFullName];
+            return _printServices[classFullName];
         }
 
         /*
@@ -36,12 +36,12 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
         /// <summary>
         /// Get instance according to the key stored in Environment variables
         /// </summary>
-        public static Printer Instance
+        public static PrintService Instance
         {
             get
             {
                 string key = GetEnvKey();
-                return _printers[key];
+                return _printServices[key];
             }
         }       
         
@@ -60,7 +60,7 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
 
         public virtual void Print(object printItem)
         {
-            Console.WriteLine("Printer is printing: " + printItem.ToString());
+            Console.WriteLine("Print service has received: " + printItem.ToString());
         }
 
     }

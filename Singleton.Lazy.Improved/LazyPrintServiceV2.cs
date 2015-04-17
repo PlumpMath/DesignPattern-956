@@ -1,46 +1,72 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace TerrLuo.DesignPattern.Singleton.Lazy.Improved
 {
-    public class LazyPrintServiceV2
+    public sealed class LazyPrintServiceV2
     {
-        private LazyPrintServiceV2()
-        {
-            this.PrintItems = new Queue();
-        }
+        // Item Queue for printing (Synchronized for thread safe)
+        private readonly Queue _printItemQueue = Queue.Synchronized(new Queue());
 
-        private static LazyPrintServiceV2 Printer;
+        // Printers (IP Address)
+        private readonly List<string> _printers = new List<string> { "172.18.125.1", "172.18.125.2", "172.18.125.3" };
+
+        #region Singleton
+
+        private static LazyPrintServiceV2 _printService;          // Different from Eager Mode
         private static object SyncRoot = new object();
 
-        private Queue PrintItems;
+        private LazyPrintServiceV2()
+        {
+            // Code to initialize _printItemQueue and _printers can also be move here
+
+            // Code to start the print loop job, something like: while (true) { DispatchPrint(); Sleep(5000); }
+
+            // Some more code to do initialization
+        }
 
         public static LazyPrintServiceV2 Instance
         {
             get
             {
                 // Double-check locking
-                if (Printer == null)
+                if (_printService == null)
                 {
                     lock (SyncRoot)
                     {
-                        if (Printer == null)
+                        if (_printService == null)
                         {
-                            Printer = new LazyPrintServiceV2();
+                            _printService = new LazyPrintServiceV2();   // Different from Eager Mode
                         }
                     }
                 }
 
-                return Printer;
+                return _printService;
             }
         }
 
+        #endregion
+
         public void Print(object printItem)
         {
-            Console.WriteLine("Lazy Printer is printing: " + printItem.ToString());
+            this._printItemQueue.Enqueue(printItem);
+            Console.WriteLine("Lazy print service has received: " + printItem.ToString());
+        }
+
+        private void DispatchPrint()
+        {
+            if (this._printItemQueue.Count > 0)
+            {
+                // Get the print item at the beginning of the queue
+                Object printItem = this._printItemQueue.Dequeue();
+
+                // Get a printer randomly
+                string printer = this._printers[new Random().Next(0, 100) % this._printers.Count];
+
+                // Code to request the printer to print the item 
+                // ......
+            }
         }
     }
 }
