@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Terry
+namespace TerrLuo.DesignPattern.Singleton.Registry.Terry
 {
     public class Client
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Half
+namespace TerrLuo.DesignPattern.Singleton.Registry.Half
 {
     public class PrintService
     {
@@ -31,6 +31,8 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Half
             return _printServices[classFullName];
         }
 
+        #region Case: Read key from Environment variables
+
         /*
         
         /// <summary>
@@ -58,10 +60,11 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Half
         
         */
 
+        #endregion
+
         public virtual void Print(object printItem)
         {
             Console.WriteLine("Print service has received: " + printItem.ToString());
         }
-
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Terry
+namespace TerrLuo.DesignPattern.Singleton.Registry.Terry
 {
-    public class BlackWhitePrintService : PrintService
+    public class ColourPrintService : PrintService
     {
         /// <summary>
         /// Client must use this member as key passed to PrintService,
@@ -11,21 +11,21 @@ namespace TerrLuo.DesignPattern.Singleton.Register.Terry
         /// </summary>
         public static readonly string InstanceKey = typeof(ColourPrintService).FullName;
 
-        static BlackWhitePrintService()
+        static ColourPrintService()
         {
-            new BlackWhitePrintService().Register(InstanceKey);
+            new ColourPrintService().Register(InstanceKey);
         }
 
         /// <summary>
         /// Still "private"
         /// </summary>
-        private BlackWhitePrintService()
+        private ColourPrintService()
         {
         }
 
         public override void Print(object printItem)
         {
-            Console.WriteLine("Black & white print service has received: " + printItem.ToString());
+            Console.WriteLine("Colour print service has received: " + printItem.ToString());
         }
     }
 }

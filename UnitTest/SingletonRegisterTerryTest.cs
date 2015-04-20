@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using TerrLuo.DesignPattern.Singleton.Register.Terry;
+using TerrLuo.DesignPattern.Singleton.Registry.Terry;
 
 namespace TerrLuo.DesignPattern.UnitTest
 {

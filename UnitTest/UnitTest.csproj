@@ -55,13 +55,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Singleton.Register.Half\Singleton.Register.Half.csproj">
+    <ProjectReference Include="..\Singleton.Registry.Half\Singleton.Registry.Half.csproj">
       <Project>{d81453a3-c741-4177-b6b0-5a4ec6c3ff2f}</Project>
-      <Name>Singleton.Register.Half</Name>
+      <Name>Singleton.Registry.Half</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Singleton.Register.Terry\Singleton.Register.Terry.csproj">
+    <ProjectReference Include="..\Singleton.Registry.Terry\Singleton.Registry.Terry.csproj">
       <Project>{4fe1c408-0db9-454c-85e8-0977c9a45b02}</Project>
-      <Name>Singleton.Register.Terry</Name>
+      <Name>Singleton.Registry.Terry</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

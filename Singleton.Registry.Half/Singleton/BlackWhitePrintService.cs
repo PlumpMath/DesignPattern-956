@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Half
+namespace TerrLuo.DesignPattern.Singleton.Registry.Half
 {
     public class BlackWhitePrintService : PrintService
     {

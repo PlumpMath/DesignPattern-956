@@ -7,8 +7,8 @@
     <ProjectGuid>{D81453A3-C741-4177-B6B0-5A4EC6C3FF2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TerrLuo.DesignPattern.Singleton.Register.Half</RootNamespace>
-    <AssemblyName>TerrLuo.DesignPattern.Singleton.Register.Half</AssemblyName>
+    <RootNamespace>TerrLuo.DesignPattern.Singleton.Registry.Half</RootNamespace>
+    <AssemblyName>TerrLuo.DesignPattern.Singleton.Registry.Half</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

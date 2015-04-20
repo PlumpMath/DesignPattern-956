@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TerrLuo.DesignPattern.Singleton.Register.Half
+namespace TerrLuo.DesignPattern.Singleton.Registry.Half
 {
     public class ColourPrintService : PrintService
     {

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TerrLuo.DesignPattern.Singleton.Register
+namespace TerrLuo.DesignPattern.Singleton.Registry
 {
     public class PrintService
     {
-        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string,PrintService>();
+        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string, PrintService>();
 
         /// <summary>
         /// Notice: Printer as a base class has to know all its children classes: InkjetPrinter, LaserPrinter
@@ -28,6 +28,8 @@ namespace TerrLuo.DesignPattern.Singleton.Register
         {
             return _printServices[key];
         }
+
+        #region Case: Read key from Environment variables
 
         /*
         
@@ -55,6 +57,8 @@ namespace TerrLuo.DesignPattern.Singleton.Register
         }
         
         */
+
+        #endregion
 
         public virtual void Print(object printItem)
         {
