@@ -5,7 +5,7 @@ namespace TerrLuo.DesignPattern.Singleton.Registry.Half
 {
     public class PrintService
     {
-        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string,PrintService>();
+        private static readonly Dictionary<string, PrintService> _printServices = new Dictionary<string, PrintService>();
 
         /// <summary>
         /// Notice: Here is "protected", because when instantiating its children class, it will call base class' constructor

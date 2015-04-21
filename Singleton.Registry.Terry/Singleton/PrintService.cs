@@ -66,6 +66,5 @@ namespace TerrLuo.DesignPattern.Singleton.Registry.Terry
         {
             Console.WriteLine("Print service has received: " + printItem.ToString());
         }
-
     }
 }
