@@ -8,6 +8,7 @@ namespace TerrLuo.DesignPattern.Builder
 
         public override void BuildCPU()
         {
+            // Code specific for ComputerGameLevel001 CPU
             _computer.CPU = new CPU_Intel_I3_2120();
         }
 
