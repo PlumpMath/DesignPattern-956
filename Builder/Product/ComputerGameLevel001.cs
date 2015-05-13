@@ -51,7 +51,7 @@ namespace TerrLuo.DesignPattern.Builder
         #endregion
 
 
-        #region Computer Part
+        #region More Specific Member
 
         /// <summary>
         /// 赠品(打印机)
