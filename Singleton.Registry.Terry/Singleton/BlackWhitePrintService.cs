@@ -9,7 +9,7 @@ namespace TerrLuo.DesignPattern.Singleton.Registry.Terry
         /// so that the static Constructor will be triggered due to member accessing for the first time
         /// and then this instance can be registered into dictionary.
         /// </summary>
-        public static readonly string InstanceKey = typeof(ColourPrintService).FullName;
+        public static readonly string InstanceKey = typeof(BlackWhitePrintService).FullName;
 
         static BlackWhitePrintService()
         {
