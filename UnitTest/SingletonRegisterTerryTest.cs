@@ -9,7 +9,7 @@ namespace TerrLuo.DesignPattern.UnitTest
     public class SingletonRegisterTerryTest
     {
         [TestMethod]
-        public void TestSingletonRegisterHalf()
+        public void TestSingletonRegisterTerry()
         {
             new Client().Print("Do something...");
         }
